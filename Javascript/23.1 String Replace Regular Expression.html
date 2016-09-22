@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Replace all occurrences of "Microsoft" with "AmitK Technologies" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft and Microsoft!</p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML;
+    var txt = str.replace(/Microsoft/g,"AmitK Technologies");
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

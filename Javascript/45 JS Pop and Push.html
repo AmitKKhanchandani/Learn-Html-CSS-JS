@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Javascript Data Structure</h1>
+<p>The pop method removes the last element from an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demopop"></p>
+
+<script>
+var fruits = ["KIWI", "Orange", "Apple", "Mango"];
+document.getElementById("demopop").innerHTML = fruits;
+
+function myFunction() {
+    fruits.pop();
+    document.getElementById("demopop").innerHTML = fruits;
+}
+</script>
+
+
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["KIWI", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction1() {
+    fruits.push("Banana");
+    document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

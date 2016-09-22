@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<input type="text" id="name">
+<button onclick="GetInput()">PrintName</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "Amit");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+    
+}
+    function GetInput(){
+        var name=document.getElementById("name").value;
+        document.getElementById("demo").innerHTML ="Howdy!,"+ name;
+    }
+</script>
+
+</body>
+</html>

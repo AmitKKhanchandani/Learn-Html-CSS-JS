@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The highest number is <span id="demo"></span></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+    document.write(points+"<br>");
+points.sort(function(a, b){return b-a});
+    document.write(points+"<br>");
+document.getElementById("demo").innerHTML = points[0];
+    document.write(points+"<br>");
+</script>
+
+</body>
+</html>

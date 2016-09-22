@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML style Tag Example</title>
+
+<link type="text/css" rel="stylesheet" href="sample.css">
+
+</head>
+<body>
+
+<p class="myclass textcenter">Hello, World!</p>
+<p class="myclass textcenter">Hello Chandni</p>
+
+
+</body>
+</html>
