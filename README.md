@@ -32,7 +32,7 @@ Once you're ready, you can move onto the next lesson.
 # Task Lists
 
 - [x] Upload Initial Learning Files for Html, Css, Javascript, jQuery
-- [ ] Sort Project Structure
+- [x] Sort Project Structure
 - [ ] Documentation and help/reference links inside files
 - [ ] More jQuery Examples
 - [ ] Add Additional Learning Resources Links on ReadMe file
