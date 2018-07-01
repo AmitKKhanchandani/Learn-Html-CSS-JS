@@ -1,0 +1,22 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <canvas id="c" width="1000" height="1000"></canvas>
+    <script>
+        var c = document.querySelector("#c");
+        var ctx = c.getContext("2d");
+        var img = new Image();
+        img.onload = function(){
+            ctx.drawImage(img,0,0,500,500);
+        }
+        img.src=" http://www.amitk.co.in/wp-content/uploads/2017/11/amitk-logo-material-design.png";
+
+        // http://www.amitk.co.in/wp-content/uploads/2017/11/amitk-logo-material-design.png
+    </script>
+</body>
+
+</html>

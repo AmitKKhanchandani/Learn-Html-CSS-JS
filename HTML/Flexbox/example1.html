@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Example 1</title>
+    <style>
+        @media(min-width: 468px) {
+            .container-1 {
+                display: flex;
+                /* making container of flex */
+                /* align-items: flex-start;
+            align-items: flex-end; */
+                /* align-items: stretch; Default */
+                /* flex-direction: column */
+            }
+
+            .container-2 {
+                display: flex;
+                /* justify-content: flex-start;
+            justify-content: flex-end; */
+                justify-content: space-between;
+            }
+        }
+
+        .container-3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container-1 div,
+        .container-2 div,
+        .container-3 div {
+            margin-top: 15px;
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex: 2;
+            /* The flex CSS property specifies how a flex item will grow or shrink so as to fit the space available in its flex container  https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+            order: 2;
+            /* The order CSS property specifies the order used to lay out a flex or grid item in its flex or grid container. https://developer.mozilla.org/en-US/docs/Web/CSS/order  */
+        }
+
+        .box-2 {
+            flex: 1;
+            order: 1;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 3;
+        }
+
+        .container-2-box {
+            /* width: 25% */
+            flex-basis: 25%;
+            /* Same as width */
+        }
+
+        .container-3-box{
+            flex-basis: 12%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box four</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box five</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box six</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <div class="container-3">
+            <div class="container-3-box">
+                <h3>Box seven</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="container-3-box">
+                <h3>Box eight</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="container-3-box">
+                <h3>Box nine</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="container-3-box">
+                <h3>Box ten</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="container-3-box">
+                <h3>Box eleven</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="container-3-box">
+                <h3>Box twelve</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+</body>
+
+</html>
